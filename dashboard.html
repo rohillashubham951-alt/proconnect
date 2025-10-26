@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Dashboard - ProConnect</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="ProConnect Logo" style="height: 50px;">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#" data-section="profile">Profile</a></li>
+                <li><a href="#" data-section="skills">Skills</a></li>
+                <li><a href="#" data-section="services">Services</a></li>
+                <li><a href="#" data-section="portfolio">Portfolio</a></li>
+                <li><a href="#" data-section="socials">Social Profiles</a></li>
+                <li><a href="#" data-section="additional-proofs">Additional Proofs</a></li>
+                <li><a href="#" data-section="analytics">Analytics</a></li>
+                <li><a href="#" data-section="settings">Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="dashboard-content">
+            <!-- Profile Section -->
+            <div id="profile" class="dashboard-section active">
+                <h3>Profile Information</h3>
+                <div class="profile-details">
+                    <div class="profile-item">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Enter your full name">
+                    </div>
+                    <div class="profile-item">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Enter your location">
+                    </div>
+                    <div class="profile-item">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="profile-item">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="profile-item">
+                        <label for="profilePicture">Profile Picture</label>
+                        <input type="file" id="profilePicture">
+                        <img id="profilePicturePreview" src="" alt="Profile Picture">
+                    </div>
+                </div>
+                <button>Save Profile</button>
+            </div>                      
+
+            <!-- Skills Section -->
+            <section id="skills" class="dashboard-section">
+                <h3>Skills & Certifications</h3>
+                <form id="skillsForm">
+                    <div class="skill-entry">
+                        <label for="skillName">Skill:</label>
+                        <input type="text" id="skillName" name="skillName" placeholder="E.g. Graphic Design">
+
+                        <label for="skillProof">Proof (Optional):</label>
+                        <input type="file" id="skillProof" name="skillProof" class="file-input">
+
+                        <button type="submit">Add Skill</button>
+                    </div>
+                </form>
+                <div class="skills-list">
+                    <!-- Example Skill -->
+                    <div class="skill-item">
+                        <p>Graphic Design <a href="#" class="remove-skill">Remove</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="dashboard-section">
+                <h3>Services</h3>
+                <form id="servicesForm">
+                    <label for="serviceTitle">Service Title:</label>
+                    <input type="text" id="serviceTitle" name="serviceTitle" placeholder="E.g. Logo Design">
+
+                    <label for="serviceDescription">Description:</label>
+                    <textarea id="serviceDescription" name="serviceDescription"></textarea>
+
+                    <label for="servicePrice">Price:</label>
+                    <input type="number" id="servicePrice" name="servicePrice" placeholder="E.g. 50" min="0">
+
+                    <label for="serviceDelivery">Delivery Time (Days):</label>
+                    <input type="number" id="serviceDelivery" name="serviceDelivery" placeholder="E.g. 7" min="1">
+
+                    <button type="submit">Add Service</button>
+                </form>
+                <div class="services-list">
+                    <!-- Example Service -->
+                    <div class="service-item">
+                        <h4>Logo Design</h4>
+                        <p>Starting at $50 | Delivery in 7 days</p>
+                        <a href="#" class="remove-service">Remove</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="dashboard-section">
+                <h3>Portfolio</h3>
+                <form id="portfolioForm">
+                    <label for="projectTitle">Project Title:</label>
+                    <input type="text" id="projectTitle" name="projectTitle" placeholder="E.g. Website Redesign">
+
+                    <label for="projectDescription">Description:</label>
+                    <textarea id="projectDescription" name="projectDescription"></textarea>
+
+                    <label for="projectLink">Project Link:</label>
+                    <input type="url" id="projectLink" name="projectLink" placeholder="https://example.com">
+
+                    <label for="projectImage">Project Image:</label>
+                    <input type="file" id="projectImage" name="projectImage" class="file-input">
+
+                    <button type="submit">Add Project</button>
+                </form>
+                <div class="portfolio-grid">
+                    <!-- Example Project -->
+                    <div class="portfolio-item">
+                        <img src="project_image.jpg" alt="Project Image">
+                        <h4>Website Redesign</h4>
+                        <p>Complete redesign of a corporate website...</p>
+                        <a href="https://example.com" target="_blank" class="view-project-button">View Project</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Profiles Section -->
+            <div id="socials" class="dashboard-section">
+                <h3>Social Profiles</h3>
+                <div class="socials-section">
+                    <div class="social-input">
+                        <i class="fab fa-linkedin"></i>
+                        <input type="url" placeholder="LinkedIn Profile URL">
+                    </div>
+                    <div class="social-input">
+                        <i class="fab fa-twitter"></i>
+                        <input type="url" placeholder="Twitter Profile URL">
+                    </div>
+                    <div class="social-input">
+                        <i class="fab fa-github"></i>
+                        <input type="url" placeholder="GitHub Profile URL">
+                    </div>
+                    <div class="social-input">
+                        <i class="fab fa-dribbble"></i>
+                        <input type="url" placeholder="Dribbble Profile URL">
+                    </div>
+                </div>
+                <button>Save Social Profiles</button>
+            </div>
+            
+            <!-- Additional Proofs Section -->
+            <section id="additional-proofs" class="dashboard-section">
+                <h3>Additional Proofs</h3>
+                <form id="additionalProofsForm">
+                    <label for="proofType">Proof Type:</label>
+                    <select id="proofType" name="proofType">
+                        <option value="certification">Certification</option>
+                        <option value="experience">Experience Letter</option>
+                        <option value="recommendation">Recommendation</option>
+                    </select>
+
+                    <label for="proofFile">Upload Proof:</label>
+                    <input type="file" id="proofFile" name="proofFile" class="file-input">
+
+                    <button type="submit">Add Proof</button>
+                </form>
+            </section>
+
+            <!-- Analytics Section -->
+            <section id="analytics" class="dashboard-section">
+                <h3>Analytics</h3>
+                <div class="analytics-grid">
+                    <div class="analytics-item">
+                        <h4>Profile Views</h4>
+                        <p>150</p>
+                    </div>
+                    <div class="analytics-item">
+                        <h4>Service Clicks</h4>
+                        <p>120</p>
+                    </div>
+                    <div class="analytics-item">
+                        <h4>Project Views</h4>
+                        <p>75</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Settings Section -->
+            <section id="settings" class="dashboard-section">
+                <h3>Settings</h3>
+                <form id="settingsForm">
+                    <label for="password">Change Password:</label>
+                    <input type="password" id="password" name="password" placeholder="New Password">
+
+                    <button type="submit">Update Settings</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ProConnect. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
