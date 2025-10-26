@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProConnect - Freelancers</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="logo.png" alt="ProConnect Logo" style="height: 50px; margin-right: 10px;">
+                <span style="font-size: 24px; color: #F4A261;">ProConnect</span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="become-a-freelancer.html">Become a Freelancer</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-freelancers">
+            <h1>Discover Talented Freelancers</h1>
+            <p>Browse and connect with top freelancers from various industries.</p>
+        </section>
+
+        <div class="content-wrapper">
+            <!-- Filter Sidebar -->
+            <aside class="filter-sidebar">
+                <h2>Filter Freelancers</h2>
+                <form>
+                    <label for="skills">Skills:</label>
+                    <select id="skills" name="skills">
+                        <option value="all">All Skills</option>
+                        <option value="design">Graphic & Design</option>
+                        <option value="marketing">Digital Marketing</option>
+                        <option value="writing">Writing & Translation</option>
+                        <option value="tech">Programming & Tech</option>
+                        <option value="video">Video & Animation</option>
+                        <option value="ai">AI Services</option>
+                        <option value="audio">Music & Audio</option>
+                        <option value="business">Business</option>
+                        <option value="consulting">Consulting</option>
+                    </select>
+
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="all">All Ratings</option>
+                        <option value="4">4 stars & up</option>
+                        <option value="3">3 stars & up</option>
+                        <option value="2">2 stars & up</option>
+                        <option value="1">1 star & up</option>
+                    </select>
+
+                    <label for="location">Location:</label>
+                    <select id="location" name="location">
+                        <option value="all">All Locations</option>
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="ca">Canada</option>
+                        <option value="au">Australia</option>
+                        <option value="in">India</option>
+                        <!-- Add more locations as needed -->
+                    </select>
+
+                    <label for="rate">Hourly Rate:</label>
+                    <select id="rate" name="rate">
+                        <option value="all">All Rates</option>
+                        <option value="0-20">Under $20/hr</option>
+                        <option value="20-50">$20 - $50/hr</option>
+                        <option value="50-100">$50 - $100/hr</option>
+                        <option value="100">Over $100/hr</option>
+                    </select>
+
+                    <label for="sort">Sort By:</label>
+                    <select id="sort" name="sort">
+                        <option value="relevance">Relevance</option>
+                        <option value="rating">Highest Rating</option>
+                        <option value="newest">Newest</option>
+                    </select>
+
+                    <button type="submit">Apply</button>
+                </form>
+            </aside>
+
+            <!-- Freelancers List -->
+            <section class="freelancers-list">
+                <div class="freelancers-grid">
+                    <div class="freelancer-card">
+                        <img src="https://img.freepik.com/free-photo/portrait-smiling-young-man_1268-21877.jpg?ga=GA1.1.719887179.1721639641&semt=sph" alt="Freelancer 1" class="freelancer-photo">
+                        <h3>Michael Brown</h3>
+                        <p><i class="fas fa-star"></i> 4.9 (120 reviews)</p>
+                        <p>Graphic Designer</p>
+                        <p>From: United States</p>
+                        <p>Starting at $30/hr</p>
+                        <div class="skill-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Illustrator</span>
+                            <span class="tag">Brand Design</span>
+                        </div>
+                        <button class="freelancer-button">View Profile</button>
+                        <button class="freelancer-button message-button">Message</button>
+                    </div>
+                    <div class="freelancer-card">
+                        <img src="https://img.freepik.com/free-photo/close-up-portrait-handsome-man-thinking_176420-3850.jpg?ga=GA1.1.719887179.1721639641&semt=ais_hybrid" alt="Freelancer 2" class="freelancer-photo">
+                        <h3>John Smith</h3>
+                        <p><i class="fas fa-star"></i> 4.8 (98 reviews)</p>
+                        <p>Digital Marketer</p>
+                        <p>From: United Kingdom</p>
+                        <p>Starting at $40/hr</p>
+                        <div class="skill-tags">
+                            <span class="tag">SEO</span>
+                            <span class="tag">PPC</span>
+                            <span class="tag">Social Media</span>
+                        </div>
+                        <button class="freelancer-button">View Profile</button>
+                        <button class="freelancer-button message-button">Message</button>
+                    </div>
+                    <div class="freelancer-card">
+                        <img src="https://img.freepik.com/free-photo/portrait-young-girl-yellow-sweater_1303-13117.jpg?ga=GA1.1.719887179.1721639641&semt=ais_hybrid" alt="Freelancer 3" class="freelancer-photo">
+                        <h3>Emily Johnson</h3>
+                        <p><i class="fas fa-star"></i> 5.0 (150 reviews)</p>
+                        <p>Content Writer</p>
+                        <p>From: Canada</p>
+                        <p>Starting at $25/hr</p>
+                        <div class="skill-tags">
+                            <span class="tag">Blog Writing</span>
+                            <span class="tag">Copywriting</span>
+                            <span class="tag">Technical Writing</span>
+                        </div>
+                        <button class="freelancer-button">View Profile</button>
+                        <button class="freelancer-button message-button">Message</button>
+                    </div>
+                    <div class="freelancer-card">
+                        <img src="https://img.freepik.com/free-photo/closeup-photo-young-girl-smiling-camera-high-quality-photo_144627-74258.jpg?ga=GA1.1.719887179.1721639641&semt=ais_hybrid" alt="Freelancer 4" class="freelancer-photo">
+                        <h3>Jane Doe</h3>
+                        <p><i class="fas fa-star"></i> 4.7 (85 reviews)</p>
+                        <p>Software Developer</p>
+                        <p>From: Australia</p>
+                        <p>Starting at $50/hr</p>
+                        <div class="skill-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <button class="freelancer-button">View Profile</button>
+                        <button class="freelancer-button message-button">Message</button>
+                    </div>
+                    <div class="freelancer-card">
+                        <img src="https://img.freepik.com/free-photo/young-attractive-man-looking-suprised-isolated-red_155003-11739.jpg?ga=GA1.1.719887179.1721639641&semt=ais_hybrid" alt="Freelancer 5" class="freelancer-photo">
+                        <h3>Aaron Ming</h3>
+                        <p><i class="fas fa-star"></i> 4.5 (70 reviews)</p>
+                        <p>Video Editor</p>
+                        <p>From: India</p>
+                        <p>Starting at $35/hr</p>
+                        <div class="skill-tags">
+                            <span class="tag">Final Cut</span>
+                            <span class="tag">Adobe Premiere</span>
+                            <span class="tag">After Effects</span>
+                        </div>
+                        <button class="freelancer-button">View Profile</button>
+                        <button class="freelancer-button message-button">Message</button>
+                    </div>     
+                </div>
+            </section>
+        </div>
+        <section class="cta-freelancers">
+            <h2>Join Our Freelancer Community</h2>
+            <p>Unlock your potential with ProConnect and gain access to a world of opportunities.</p>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <i class="fas fa-briefcase"></i>
+                    <p>Work with global clients</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p>Secure and timely payments</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-user-tie"></i>
+                    <p>Build your professional portfolio</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <blockquote>"ProConnect has connected me with amazing clients and helped grow my freelance career!"</blockquote>
+                <cite>- Alex Johnson, Freelance Developer</cite>
+            </div>
+            <a href="become-a-freelancer.html" class="cta-button">Become a Freelancer</a>
+        </section>
+        
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2024 ProConnect. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
