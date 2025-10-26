@@ -57,3 +57,8 @@ https://proconnectt.netlify.app/
 ## Project Presentation
 [Download the Project PPT](./presentation/ProConnect-College.pptx)
 
+## PROJECT SCREENSHOTS
+<img width="1340" height="617" alt="pc 1" src="https://github.com/user-attachments/assets/57f39198-f3e7-40f5-8de1-cf772095dd23" />
+<img width="1356" height="414" alt="pc 2" src="https://github.com/user-attachments/assets/a3da8134-af91-4984-9c2f-15a8c5b75761" />
+<img width="1365" height="621" alt="pc 3" src="https://github.com/user-attachments/assets/a7d40fe7-5226-4230-bbca-d368d3645492" />
+
