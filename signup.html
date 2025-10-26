@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProConnect - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="signup-options">
+            <p>Or sign up as:</p>
+            <a href="signup-freelancer.html" class="signup-as-freelancer">Sign Up as a Freelancer</a>
+        </div>
+
+        <p>Already have an account? <a href="login.html">Login</a></p>
+        <button class="back-button" onclick="window.location.href='index.html';">Back to Home</button>
+    </div>
+</body>
+</html>
