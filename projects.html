@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProConnect - Projects</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="logo.png" alt="ProConnect Logo" style="height: 50px; margin-right: 10px;">
+                <span style="font-size: 24px; color: #F4A261;">ProConnect</span>
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for any service...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="freelancers.html">Freelancers</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="become-a-freelancer.html">Become a Freelancer</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-projects">
+            <h1>Explore Freelance Projects</h1>
+            <p>Find exciting projects and showcase your expertise to a global audience.</p>
+        </section>
+
+        <div class="content-wrapper">
+            <!-- Filter Sidebar -->
+            <aside class="filter-sidebar">
+                <h2>Filter Projects</h2>
+                <form>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="all">All Categories</option>
+                        <option value="design">Graphic & Design</option>
+                        <option value="marketing">Digital Marketing</option>
+                        <option value="writing">Writing & Translation</option>
+                        <option value="tech">Programming & Tech</option>
+                        <option value="video">Video & Animation</option>
+                        <option value="ai">AI Services</option>
+                        <option value="audio">Music & Audio</option>
+                        <option value="business">Business</option>
+                        <option value="consulting">Consulting</option>
+                    </select>
+
+                    <label for="budget">Budget:</label>
+                    <select id="budget" name="budget">
+                        <option value="all">All</option>
+                        <option value="0-200">Under $200</option>
+                        <option value="200-500">$200 - $500</option>
+                        <option value="500-1000">$500 - $1000</option>
+                        <option value="1000-2000">$1000 - $2000</option>
+                        <option value="2000">Over $2000</option>
+                    </select>
+
+                    <label for="sort">Sort By:</label>
+                    <select id="sort" name="sort">
+                        <option value="latest">Latest</option>
+                        <option value="deadline">Deadline</option>
+                        <option value="budget">Budget</option>
+                    </select>
+
+                    <button type="submit">Apply</button>
+                </form>
+            </aside>
+
+            <!-- Projects List -->
+            <section class="projects-list">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Website Redesign</h3>
+                        <p class="project-description">Looking for a skilled web designer to revamp our company website.</p>
+                        <p><strong>Budget:</strong> $1000 - $1500</p>
+                        <p><strong>Deadline:</strong> 30 days</p>
+                        <button class="project-button">View Details</button>
+                    </div>
+                    <div class="project-card">
+                        <h3>Mobile App Development</h3>
+                        <p class="project-description">Need an experienced developer to create a cross-platform mobile app.</p>
+                        <p><strong>Budget:</strong> $5000</p>
+                        <p><strong>Deadline:</strong> 45 days</p>
+                        <button class="project-button">View Details</button>
+                    </div>
+                    <div class="project-card">
+                        <h3>Logo Design</h3>
+                        <p class="project-description">Seeking a creative graphic designer to design a logo for our startup.</p>
+                        <p><strong>Budget:</strong> $200</p>
+                        <p><strong>Deadline:</strong> 10 days</p>
+                        <button class="project-button">View Details</button>
+                    </div>
+                    <div class="project-card">
+                        <h3>SEO Optimization</h3>
+                        <p class="project-description">Looking for an SEO expert to improve our website ranking and visibility.</p>
+                        <p><strong>Budget:</strong> $800</p>
+                        <p><strong>Deadline:</strong> 20 days</p>
+                        <button class="project-button">View Details</button>
+                    </div>
+                    <!-- More project cards can be added here -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2024 ProConnect. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
