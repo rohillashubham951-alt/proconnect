@@ -1,7 +1,7 @@
 # ProConnect – Where Clients Find Professionals
 
 ## Overview
-ProConnect is a smart freelance platform that connects clients with talented professionals, emphasizing secure transactions, low costs, and efficient matches. Developed as a collaborative college project, ProConnect responds to the demand for reliable freelance workspaces with zero transaction fees and user-centered security.
+ProConnect is a smart freelance platform (currently, only a front-end project) that connects clients with talented professionals, emphasizing secure transactions, low costs, and efficient matches. Developed as a collaborative college project, ProConnect responds to the demand for reliable freelance workspaces with zero transaction fees and user-centered security.
 
 ## Problem Statement
 - Traditional freelance platforms struggle with inefficient matching, making it hard for clients to find suitable freelancers.
